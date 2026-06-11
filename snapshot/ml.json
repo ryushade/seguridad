@@ -1,5 +1,5 @@
 {
- "generado": 1781159253970,
+ "generado": 1781160404970,
  "estado": {
   "actasPct": 98.215,
   "margenSanchez": -651,
@@ -9,8 +9,8 @@
  "modelo": {
   "tipo": "Surrogate ensemble (GradientBoosting) + composicional + ancla histórica 2021",
   "n_muestras": 12000,
-  "clf_auc": 0.9992,
-  "clf_acc": 0.9953,
+  "clf_auc": 0.9993,
+  "clf_acc": 0.996,
   "ext_keiko_modelado": 0.6495
  },
  "prediccion": {
@@ -28,10 +28,10 @@
   ]
  },
  "importancia_variables": {
-  "dom_share_sanchez": 0.5847,
-  "jee_noise": 0.3842,
-  "ext_share_keiko": 0.0213,
-  "ext_turnout": 0.0098
+  "dom_share_sanchez": 0.5823,
+  "jee_noise": 0.3913,
+  "ext_share_keiko": 0.018,
+  "ext_turnout": 0.0084
  },
  "punto_quiebre_exterior_keiko": null,
  "dependencia_parcial": [
