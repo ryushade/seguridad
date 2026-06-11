@@ -1,0 +1,348 @@
+{
+ "snapshot": "10/06/2026 21:07",
+ "tot": {
+  "recibidas": 1479,
+  "creados": 1419,
+  "atendidas": 930,
+  "tramite": 549,
+  "pctAtendidas": 65.54
+ },
+ "recuento": {
+  "enviadas": 115,
+  "pendientes": 105,
+  "programadas": 7,
+  "realizadas": 0
+ },
+ "table": [
+  {
+   "jee": "LIMA OESTE 3",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 111,
+   "creados": 111,
+   "atendidos": 90,
+   "recuento": 0,
+   "pct": 81.08
+  },
+  {
+   "jee": "LIMA CENTRO 2",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 99,
+   "creados": 99,
+   "atendidos": 46,
+   "recuento": 3,
+   "pct": 46.46
+  },
+  {
+   "jee": "LIMA ESTE 2",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 96,
+   "creados": 86,
+   "atendidos": 20,
+   "recuento": 3,
+   "pct": 23.26
+  },
+  {
+   "jee": "LIMA ESTE 1",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 88,
+   "creados": 38,
+   "atendidos": 9,
+   "recuento": 1,
+   "pct": 23.68
+  },
+  {
+   "jee": "CALLAO",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.58,
+   "recibidas": 69,
+   "creados": 69,
+   "atendidos": 24,
+   "recuento": 0,
+   "pct": 34.78
+  },
+  {
+   "jee": "LIMA OESTE 2",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 64,
+   "creados": 64,
+   "atendidos": 59,
+   "recuento": 2,
+   "pct": 92.19
+  },
+  {
+   "jee": "LIMA OESTE 1",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 63,
+   "creados": 63,
+   "atendidos": 35,
+   "recuento": 5,
+   "pct": 55.56
+  },
+  {
+   "jee": "LIMA NORTE 1",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 62,
+   "creados": 62,
+   "atendidos": 61,
+   "recuento": 18,
+   "pct": 98.39
+  },
+  {
+   "jee": "LIMA CENTRO 1",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 61,
+   "creados": 61,
+   "atendidos": 61,
+   "recuento": 13,
+   "pct": 100
+  },
+  {
+   "jee": "LIMA SUR 2",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 61,
+   "creados": 61,
+   "atendidos": 49,
+   "recuento": 11,
+   "pct": 80.33
+  },
+  {
+   "jee": "LIMA NORTE 2",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 55,
+   "creados": 55,
+   "atendidos": 27,
+   "recuento": 0,
+   "pct": 49.09
+  },
+  {
+   "jee": "LIMA SUR 1",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 54,
+   "creados": 54,
+   "atendidos": 0,
+   "recuento": 0,
+   "pct": 0
+  },
+  {
+   "jee": "LIMA NORTE 3",
+   "zona": "Lima/Callao",
+   "lean": "K",
+   "leanPct": 0.6,
+   "recibidas": 47,
+   "creados": 47,
+   "atendidos": 47,
+   "recuento": 10,
+   "pct": 100
+  },
+  {
+   "jee": "CUSCO",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.25,
+   "recibidas": 40,
+   "creados": 40,
+   "atendidos": 6,
+   "recuento": 0,
+   "pct": 15
+  },
+  {
+   "jee": "CORONEL PORTILLO",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.44,
+   "recibidas": 29,
+   "creados": 29,
+   "atendidos": 23,
+   "recuento": 7,
+   "pct": 79.31
+  },
+  {
+   "jee": "PIURA 1",
+   "zona": "Provincia",
+   "lean": "K",
+   "leanPct": 0.59,
+   "recibidas": 29,
+   "creados": 29,
+   "atendidos": 28,
+   "recuento": 0,
+   "pct": 96.55
+  },
+  {
+   "jee": "MAYNAS",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.44,
+   "recibidas": 25,
+   "creados": 25,
+   "atendidos": 15,
+   "recuento": 4,
+   "pct": 60
+  },
+  {
+   "jee": "SANTA",
+   "zona": "Provincia",
+   "lean": "K",
+   "leanPct": 0.55,
+   "recibidas": 25,
+   "creados": 25,
+   "atendidos": 25,
+   "recuento": 6,
+   "pct": 100
+  },
+  {
+   "jee": "PIURA 2",
+   "zona": "Provincia",
+   "lean": "K",
+   "leanPct": 0.59,
+   "recibidas": 23,
+   "creados": 23,
+   "atendidos": 7,
+   "recuento": 3,
+   "pct": 30.43
+  },
+  {
+   "jee": "ICA",
+   "zona": "Provincia",
+   "lean": "K",
+   "leanPct": 0.57,
+   "recibidas": 22,
+   "creados": 22,
+   "atendidos": 19,
+   "recuento": 4,
+   "pct": 86.36
+  },
+  {
+   "jee": "CAJAMARCA",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.4,
+   "recibidas": 21,
+   "creados": 21,
+   "atendidos": 20,
+   "recuento": 1,
+   "pct": 95.24
+  },
+  {
+   "jee": "TRUJILLO",
+   "zona": "Provincia",
+   "lean": "K",
+   "leanPct": 0.56,
+   "recibidas": 20,
+   "creados": 20,
+   "atendidos": 14,
+   "recuento": 0,
+   "pct": 70
+  },
+  {
+   "jee": "CHANCHAMAYO",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.42,
+   "recibidas": 19,
+   "creados": 19,
+   "atendidos": 19,
+   "recuento": 4,
+   "pct": 100
+  },
+  {
+   "jee": "HUAURA",
+   "zona": "Provincia",
+   "lean": "K",
+   "leanPct": 0.53,
+   "recibidas": 16,
+   "creados": 16,
+   "atendidos": 16,
+   "recuento": 3,
+   "pct": 100
+  },
+  {
+   "jee": "PACASMAYO",
+   "zona": "Provincia",
+   "lean": "K",
+   "leanPct": 0.56,
+   "recibidas": 16,
+   "creados": 16,
+   "atendidos": 15,
+   "recuento": 0,
+   "pct": 93.75
+  },
+  {
+   "jee": "AREQUIPA 1",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.35,
+   "recibidas": 14,
+   "creados": 14,
+   "atendidos": 8,
+   "recuento": 0,
+   "pct": 57.14
+  },
+  {
+   "jee": "HUAMANGA",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.25,
+   "recibidas": 14,
+   "creados": 14,
+   "atendidos": 14,
+   "recuento": 4,
+   "pct": 100
+  },
+  {
+   "jee": "PASCO",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.4,
+   "recibidas": 14,
+   "creados": 14,
+   "atendidos": 9,
+   "recuento": 2,
+   "pct": 64.29
+  },
+  {
+   "jee": "SAN MARTIN",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.46,
+   "recibidas": 14,
+   "creados": 14,
+   "atendidos": 13,
+   "recuento": 1,
+   "pct": 92.86
+  },
+  {
+   "jee": "OTROS ~29 JEE (≤13 actas c/u)",
+   "zona": "Provincia",
+   "lean": "S",
+   "leanPct": 0.45,
+   "recibidas": 208,
+   "creados": null,
+   "atendidos": null,
+   "recuento": 0,
+   "pct": null
+  }
+ ]
+}
