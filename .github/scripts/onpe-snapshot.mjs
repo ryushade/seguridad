@@ -65,6 +65,18 @@ function combine(d, e) {
 
 const [dom, ext] = await Promise.all([getAmbito(1), getAmbito(2)])
 
+// Detección de cambios: si los datos subyacentes no cambiaron respecto al
+// resumen.json existente, no escribir nada (evita commits vacíos del poller).
+const firma = JSON.stringify({ d: [dom.contab, dom.sanchez, dom.keiko], e: [ext.contab, ext.sanchez, ext.keiko] })
+try {
+  const prev = JSON.parse(readFileSync(join(OUT, "resumen.json"), "utf8"))
+  const prevFirma = JSON.stringify({ d: [prev.dom.contab, prev.dom.sanchez, prev.dom.keiko], e: [prev.ext.contab, prev.ext.sanchez, prev.ext.keiko] })
+  if (firma === prevFirma) {
+    console.log("sin cambios en ONPE — no se escribe nada")
+    process.exit(0)
+  }
+} catch { /* primer run o archivo corrupto: continuar */ }
+
 const dS = dom.pShareSanchez, eS = ext.pShareSanchez
 const OBS_LIMA_W = 0.62, LIMA_S = 0.40
 const dSObs = OBS_LIMA_W * LIMA_S + (1 - OBS_LIMA_W) * dS

@@ -2,7 +2,7 @@ name: ONPE live snapshot
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # cada 5 min (GitHub puede espaciarlo a ~10)
+    - cron: "*/5 * * * *"   # cron minimo de GitHub; el bucle interno cubre el hueco
   workflow_dispatch: {}
 
 permissions:
@@ -15,6 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4   # rama default = gh-pages (el propio sitio)
 
@@ -22,17 +23,20 @@ jobs:
         with:
           node-version: 20
 
-      - name: Actualizar snapshots desde la ONPE
-        run: node .github/scripts/onpe-snapshot.mjs snapshot
-
-      - name: Commit y push si hay cambios
+      - name: Poll ONPE ~4.5 min (push apenas cambian los datos)
         run: |
           git config user.name "onpe-snapshot-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add snapshot
-          if git diff --cached --quiet; then
-            echo "sin cambios"
-          else
-            git commit -m "snapshot ONPE $(date -u +%FT%TZ)"
-            git push
-          fi
+          END=$((SECONDS+260))
+          while [ $SECONDS -lt $END ]; do
+            node .github/scripts/onpe-snapshot.mjs snapshot || true
+            git add snapshot
+            if git diff --cached --quiet; then
+              echo "$(date -u +%T) sin cambios"
+            else
+              git commit -m "snapshot ONPE $(date -u +%FT%TZ)"
+              git pull --rebase origin gh-pages || true
+              git push origin gh-pages || true
+            fi
+            sleep 40
+          done
