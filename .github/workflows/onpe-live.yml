@@ -1,0 +1,38 @@
+name: ONPE live snapshot
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # cada 5 min (GitHub puede espaciarlo a ~10)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: onpe-snapshot
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4   # rama default = gh-pages (el propio sitio)
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Actualizar snapshots desde la ONPE
+        run: node .github/scripts/onpe-snapshot.mjs snapshot
+
+      - name: Commit y push si hay cambios
+        run: |
+          git config user.name "onpe-snapshot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add snapshot
+          if git diff --cached --quiet; then
+            echo "sin cambios"
+          else
+            git commit -m "snapshot ONPE $(date -u +%FT%TZ)"
+            git push
+          fi
