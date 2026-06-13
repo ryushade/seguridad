@@ -1,37 +1,37 @@
 {
- "generado": 1781387961723,
+ "generado": 1781388465840,
  "estado": {
-  "actasPct": 98.493,
-  "margenSanchez": -15004,
+  "actasPct": 98.504,
+  "margenSanchez": -15734,
   "ext_pct_contado": 95.124,
   "ext_keiko_pct": 63.387
  },
  "modelo": {
   "tipo": "Surrogate ensemble (GradientBoosting) + composicional + ancla histórica 2021",
   "n_muestras": 12000,
-  "clf_auc": 0.8567,
-  "clf_acc": 0.9983,
+  "clf_auc": 0.9985,
+  "clf_acc": 0.9993,
   "ext_keiko_modelado": 0.6493
  },
  "prediccion": {
-  "p_keiko": 0.9967,
-  "p_sanchez": 0.0033,
+  "p_keiko": 0.9973,
+  "p_sanchez": 0.0027,
   "ganador": "KEIKO",
-  "margen_mediano": -50907,
+  "margen_mediano": -51404,
   "margen_ic80": [
-   -75041,
-   -26563
+   -75419,
+   -27158
   ],
   "margen_ic90": [
-   -81742,
-   -19390
+   -82101,
+   -20007
   ]
  },
  "importancia_variables": {
-  "dom_share_sanchez": 0.948,
-  "jee_noise": 0.0478,
-  "ext_turnout": 0.0042,
-  "ext_share_keiko": 0.0
+  "jee_noise": 0.5558,
+  "dom_share_sanchez": 0.4221,
+  "ext_share_keiko": 0.0163,
+  "ext_turnout": 0.0058
  },
  "punto_quiebre_exterior_keiko": null,
  "dependencia_parcial": [
@@ -153,10 +153,10 @@
   }
  ],
  "momento_trayectoria": {
-  "slope_votos_por_punto_actas": -67232.38630069098,
-  "r2": 0.9813713396177529,
-  "ultimo_margen": -15004.0,
-  "ultimo_pct": 98.493
+  "slope_votos_por_punto_actas": -67862.00118426837,
+  "r2": 0.9840576603545268,
+  "ultimo_margen": -15734.0,
+  "ultimo_pct": 98.504
  },
  "nota": "Modelo de nowcasting: aprende la sensibilidad del resultado a los factores inciertos del cierre del conteo. La variable dominante confirma cuál decide la elección. No predice eventos legales del JNE."
 }
